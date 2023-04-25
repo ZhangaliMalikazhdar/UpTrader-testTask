@@ -1,0 +1,20 @@
+{% if menu_list %}
+<ul>
+    {% for menu in menu_list %}
+    <li>
+<!--        <a href="">{{ menu.name }}</a>-->
+        {% if menu.list_set %}
+            <ul>
+                {% for detail in menu.list_set.all %}
+                    <li>{{ detail.name }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+        <h1>doesnt work or exist list of menu</h1>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>Empty menu list</p>
+{% endif %}
