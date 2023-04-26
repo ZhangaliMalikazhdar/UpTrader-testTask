@@ -17,5 +17,7 @@ How to run App:
 7) python manage.py runserver 8000
 
 main menu url: 127.0.0.1:8000/
-create menus with lists in django-admin 
+
+create menus with lists in django-admin
+
 url for admin: 127.0.0.1:8000/admin
